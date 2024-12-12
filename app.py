@@ -82,6 +82,8 @@ submit_button = st.button("Generate the Analysis")
 
 if submit_button:
     # process uploaded image
+    if not uploaded_file:
+        st.write("Please upload image")
     image_data = uploaded_file.getvalue()
 
     #making our image ready
