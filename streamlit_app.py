@@ -5,12 +5,7 @@ from click import prompt
 import os
 
 #print(os.environ.get("API_KEY", "API_KEY not found"))
-from api_key import api_key
 
-if api_key in os.environ:
-    print("API key found in environment variables.")
-else:
-    print("API key not found. Please set it using `export API_KEY=<your_key>`.")
 
 #export API_KEY=AIzaSyAyJRQpRrEX28pxegj8t8dEaVxQGJGYfdA
 #configure GenAI
